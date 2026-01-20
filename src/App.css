@@ -1,0 +1,35 @@
+/* App-specific styles */
+
+/* Ensure smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default focus outlines, we'll add custom ones */
+*:focus {
+  outline: none;
+}
+
+/* Ensure images don't break layout */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Custom selection color */
+::selection {
+  background: rgba(255, 0, 0, 0.3);
+  color: white;
+}
+
+/* Prevent text selection on interactive elements */
+button,
+a {
+  user-select: none;
+}
+
+/* Ensure proper stacking context */
+main {
+  position: relative;
+  z-index: 10;
+}
